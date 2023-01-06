@@ -1,9 +1,14 @@
-import React from 'react';
+import React from 'react'
 
 const Error = ({ message }) => {
-	let errorMessage = message || 'Error';
+    let errorMessage = message || "에러입니다.";
+    return (
+        <div
+            style={{ backgroundColor: "red", color: "white" }}
+        >
+            {errorMessage}
+        </div>
+    )
+}
 
-	return <div style={{ backgrondColor: 'red', color: 'white', padding: '10px', margin: '10px' }}>{errorMessage}</div>;
-};
-
-export default Error;
+export default Error
